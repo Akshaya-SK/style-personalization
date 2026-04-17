@@ -11,3 +11,25 @@ The system focuses on identifying:
 - Body Type
 - Color Palette
 - Personal Aesthetic
+
+## V0 – Prototype (Rule-Based Engine)
+
+### Description
+
+V0 is a fully functional prototype that demonstrates an end-to-end rule-based personalization pipeline.
+Users answer a structured questionnaire, and the backend processes these responses using deterministic logic to generate basic style classifications.
+
+### What It Does
+
+- Collects user input via questionnaire
+- Processes responses using rule-based logic
+- Classifies:
+  - Face Shape
+  - Body Type
+  - Color Profile
+  - Aesthetic Style
+- Displays results on the frontend
+
+### Core Pipeline
+
+``` User Input → Backend Processing → Rule Engine → Output Generation ```
