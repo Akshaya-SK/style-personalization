@@ -33,3 +33,44 @@ Users answer a structured questionnaire, and the backend processes these respons
 ### Core Pipeline
 
 ``` User Input → Backend Processing → Rule Engine → Output Generation ```
+
+### Objective of V0
+
+- Validate system flow end-to-end
+- Establish baseline logic for personalization
+- Create a foundation for future ML integration
+
+### Limitations
+
+- Hardcoded rules (no learning capability)
+- Static questionnaire
+- Limited personalization depth
+- No explainability layer
+
+### Architecture (V0)
+
+- **Frontend**: Collects questionnaire responses
+- **Backend**: Processes inputs and applies rules
+- **Logic Layer**: Deterministic rule engine
+- **Output Layer**: Displays classification results
+
+### What’s Next (V1 Preview)
+
+V1 will transition from rule-based logic to a weighted personalization engine, introducing:
+- Weighted scoring system
+- Confidence scores
+- Persistent user data
+- More nuanced personalization
+
+### Tech Stack
+
+- **Frontend**:	Next.js + Tailwind
+- **Backend**:	FastAPI
+- **Auth**:	Firebase Auth / Auth0
+- **Database**:	PostgreSQL
+- **Cache**:	Redis
+- **Hosting**:	Vercel + Render/AWS
+
+### Conclusion
+
+V0 successfully validates a complete personalization pipeline using rule-based logic. While simplistic, it establishes a strong structural foundation for scaling into a more intelligent, data-driven system in future versions.
